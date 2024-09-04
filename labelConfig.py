@@ -199,7 +199,7 @@ def browse_images(image_folder, label_folder):
     cv2.destroyAllWindows()
 
 # Пример использования
-image_folder = 'D://Projects//Python//DotaDetection//dataSet//Apex//ArrowUnpackedFace//train//images'  # Путь к папке с изображениями
-label_folder = 'D://Projects//Python//DotaDetection//dataSet//Apex//ArrowUnpackedFace//train//labels'  # Путь к папке с метками
+image_folder = 'image_folder'  # Путь к папке с изображениями
+label_folder = 'label_folder'  # Путь к папке с метками
 
 browse_images(image_folder, label_folder)

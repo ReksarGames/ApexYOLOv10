@@ -125,9 +125,9 @@ def main(images_folder, labels_folder, output_images_folder, output_labels_folde
         print(f"Class '{class_names[class_id]}': {count} instances")
 
 if __name__ == "__main__":
-    images_folder = "D://Projects//Python//DotaDetection//dataSet//Apex//ArrowUnpackedFace//train//images"
-    labels_folder = "D://Projects//Python//DotaDetection//dataSet//Apex//ArrowUnpackedFace//train//labels"
-    output_images_folder = "D://Projects//Python//DotaDetection//dataSet//Apex//ManualOutput//outputDataset//augmented_images"
-    output_labels_folder = "D://Projects//Python//DotaDetection//dataSet//Apex//ManualOutput//outputDataset//augmented_labels"
+    images_folder = "images_folder" # set images_folder
+    labels_folder = "labels_folder" # set labels_folder
+    output_images_folder = "dataSet/Apex/ManualOutput/augmented_images"
+    output_labels_folder = "dataSet/Apex/ManualOutput/augmented_labels"
 
     main(images_folder, labels_folder, output_images_folder, output_labels_folder)

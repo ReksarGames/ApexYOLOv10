@@ -151,12 +151,12 @@ def main():
             "width": 1920,
             "height": 1080,
         },
-        "model_path": 'D://Projects//Python//DotaDetection//Apex//Utils//runs//yolo_training//ApexESP_ImprovedV2_300e//weights//best.pt'
+        "model_path": 'runs/yolo_training10/ApexEsp400/weights/best.pt'
         # Путь к модели YOLO
     }
 
-    output_folder = 'D://Projects//Python//DotaDetection//dataSet//Apex//ManualOutput'
-    classes = ['avatar', 'object']  # Ваши классы
+    output_folder = 'dataSet/Apex/ManualOutput'
+    classes = ['apex-game', 'avatar', 'object']  # Ваши классы
     num_frames = 10000  # Количество скриншотов
 
     # Параметры авто-захвата

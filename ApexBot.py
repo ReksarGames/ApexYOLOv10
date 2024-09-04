@@ -181,7 +181,7 @@ def main():
             "width": 1920,
             "height": 1080,
         },
-        "model_path": 'D://Projects//Python//DotaDetection//Apex//runs//yolo_training10//ApexEsp400//weights//best.pt'
+        "model_path": 'runs/yolo_training10/ApexEsp400/weights/best.pt'
     }
     aiming_settings = {
         "wind_strength": 2,  # Сила ветра, влияет на разброс курсора

@@ -15,7 +15,7 @@ def train_model():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logger.info(f'Using device: {device}')
 
-    model_path = "D://Projects//Python//DotaDetection//Apex//runs//yolo_training10//ApexEsp400//weights//last.pt"
+    model_path = "runs/yolo_training10/ApexEsp400/weights/best.pt"
 
     # Инициализация модели YOLOv10
     if not os.path.isfile(model_path):
@@ -24,7 +24,7 @@ def train_model():
 
     model = YOLO(model_path).to(device)
 
-    data_yaml = 'D://Projects//Python//DotaDetection//dataSet//Apex//FinalDataset//data.yaml'
+    data_yaml = 'dataSet/Apex/FinalDataset/data.yaml'
 
     if not os.path.isfile(data_yaml):
         logger.error(f'Data configuration file not found: {data_yaml}')

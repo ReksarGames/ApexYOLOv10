@@ -19,7 +19,7 @@ def replace_labels_in_files(labels_dir):
 
 if __name__ == "__main__":
     # Укажите путь к папке, содержащей ваши файлы меток
-    labels_dir = 'D://Projects//Python//DotaDetection//dataSet//Apex//ManualOutput//train//labels'
+    labels_dir = 'DotaDetection/dataSet/Apex/ManualOutput/train/labels'
 
     # Запускаем процесс замены меток
     replace_labels_in_files(labels_dir)

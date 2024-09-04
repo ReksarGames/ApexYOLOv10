@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a85d6a04-8371-4e40-a414-707922c8ca85" name="Changes" comment="add .pt files">
-      <change afterPath="$PROJECT_DIR$/README_RU.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a85d6a04-8371-4e40-a414-707922c8ca85" name="Changes" comment="Refactoring Files. Add readMe. Update requirements.txt">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ApexYolov10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApexYolov10.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestTrainYolov10.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrainYolov10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/NewVideoToScreen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataSet/SPLIT_Files/split.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Albumentations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Albumentations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApexBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApexBot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrainYolov10.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrainYolov10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/FixLabels.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/FixLabels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/splitDatasetFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/splitDatasetFiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labelConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/labelConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/semiauto_dataset_collector.py" beforeDir="false" afterPath="$PROJECT_DIR$/semiauto_dataset_collector.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Albumentations.executor": "Run",
+    "Python.ApexBot.executor": "Run",
+    "Python.splitDatasetFiles.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -98,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725451623642</updated>
-      <workItem from="1725451630250" duration="2109000" />
+      <workItem from="1725451630250" duration="3284000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Files">
       <option name="closed" value="true" />
@@ -124,7 +129,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725451958532</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring Files. Add readMe. Update requirements.txt">
+      <option name="closed" value="true" />
+      <created>1725454051048</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725454051048</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactoring Files. Add readMe. Update requirements.txt">
+      <option name="closed" value="true" />
+      <created>1725454093847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725454093847</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactoring Files" />
     <MESSAGE value="add .pt files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .pt files" />
+    <MESSAGE value="Refactoring Files. Add readMe. Update requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Files. Add readMe. Update requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -145,5 +167,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ApexYOLOv10$ApexBot.coverage" NAME="ApexBot Coverage Results" MODIFIED="1725454536885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ApexYOLOv10$Albumentations.coverage" NAME="Albumentations Coverage Results" MODIFIED="1725454825455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ApexYOLOv10$splitDatasetFiles.coverage" NAME="splitDatasetFiles Coverage Results" MODIFIED="1725454694696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
   </component>
 </project>

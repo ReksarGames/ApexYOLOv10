@@ -35,9 +35,9 @@ def split_dataset(images_dir, labels_dir, output_base_dir, train_ratio=0.7, val_
     print(f"Dataset split into train ({len(train_files)}), val ({len(val_files)}), and test ({len(test_files)}) sets.")
 
 if __name__ == "__main__":
-    images_dir = "D://Projects//Python//DotaDetection//dataSet//Apex//ManualOutput//outputDataset//augmented_images"
-    labels_dir = "D://Projects//Python//DotaDetection//dataSet//Apex//ManualOutput//outputDataset//augmented_labels"
-    output_base_dir = "D://Projects//Python//DotaDetection//dataSet//Apex//FinalDataset"
+    images_dir = "dataSet/Apex/ManualOutput/augmented_images"
+    labels_dir = "dataSet/Apex/ManualOutput/augmented_labels"
+    output_base_dir = "dataSet/Apex/FinalDataset"
 
     create_dirs(output_base_dir)
     split_dataset(images_dir, labels_dir, output_base_dir)
