@@ -1,0 +1,7 @@
+train: 'D://Projects//Python//DotaDetection//dataSet//Apex//FinalDataset//train//images'  # Путь к тренировочным данным
+val: 'D://Projects//Python//DotaDetection//dataSet//Apex//FinalDataset//val//images'  # Путь к данным для валидации
+test: 'D://Projects//Python//DotaDetection//dataSet//Apex//FinalDataset//test//images'  # Путь к тестовым данным
+
+nc: 3
+
+names: ['apex-game', 'avatar', 'object']  # Имена классов

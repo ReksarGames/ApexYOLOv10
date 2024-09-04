@@ -1,0 +1,6 @@
+Apex/model/yolov9e.pt filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+Apex/model/* filter=lfs diff=lfs merge=lfs -text
+git filter=lfs diff=lfs merge=lfs -text
+add filter=lfs diff=lfs merge=lfs -text
+Apex/model/ filter=lfs diff=lfs merge=lfs -text
