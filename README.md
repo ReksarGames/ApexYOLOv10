@@ -4,6 +4,7 @@
 ## Project Description
 
 The ApexYOLO project focuses on developing and integrating various tools for working with the YOLO model, including training, data augmentation, auto-targeting, and a semi-automatic data collection system. Each script in the project serves a specific task, whether it's preparing a dataset, auto-targeting, or training the model.
+Currently only works with 4k resolution and 200 scaling
 
 ## Main Project Scripts:
 
