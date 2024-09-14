@@ -151,12 +151,12 @@ def main():
             "width": 1920,
             "height": 1080,
         },
-        "model_path": 'runs/yolo_training10/ApexEsp400/weights/best.pt'
+        "model_path": 'model/best_8n.pt'
         # Путь к модели YOLO
     }
 
     output_folder = 'dataSet/Apex/ManualOutput'
-    classes = ['apex-game', 'avatar', 'object']  # Ваши классы
+    classes = ['ally', 'enemy', 'tag']  # Ваши классы
     num_frames = 10000  # Количество скриншотов
 
     # Параметры авто-захвата

@@ -6,6 +6,8 @@ ref_point = []
 cropping = False
 current_labels = []
 image_copy = None
+class_names = {0: "ally", 1: "enemy", 2: "tag"}
+current_class_id = 0  # Начальный класс - "ally"
 
 def draw_labels_on_image(image_path, label_path):
     global current_labels
@@ -124,7 +126,7 @@ def remove_labels_within_selected_area(ref_point):
     current_labels = new_labels
 
 def add_label_from_selected_area(ref_point):
-    global current_labels, image_copy
+    global current_labels, image_copy, current_class_id
 
     img_h, img_w = image_copy.shape[:2]
     x1, y1 = ref_point[0]
@@ -140,8 +142,7 @@ def add_label_from_selected_area(ref_point):
     width = abs(x2 - x1) / img_w
     height = abs(y2 - y1) / img_h
 
-    class_id = 0  # Класс 'player', по умолчанию класс 0 для YOLOv9
-    new_label = (class_id, x_center, y_center, width, height)
+    new_label = (current_class_id, x_center, y_center, width, height)
     current_labels.append(new_label)
 
     print(f"Added label: {new_label}")
@@ -155,7 +156,7 @@ def save_labels(label_path):
             file.write(f"{int(label[0])} {label[1]:.6f} {label[2]:.6f} {label[3]:.6f} {label[4]:.6f}\n")
 
 def browse_images(image_folder, label_folder):
-    global image_copy
+    global image_copy, current_class_id
 
     # Получение списка всех изображений в папке
     image_files = [f for f in os.listdir(image_folder) if f.endswith(('.png', '.jpg', '.jpeg'))]
@@ -174,6 +175,8 @@ def browse_images(image_folder, label_folder):
         if image is not None:
             cv2.imshow('Image with Labels', image_copy)
             cv2.setMouseCallback("Image with Labels", click_and_crop)
+
+        print(f"Current Class: {class_names[current_class_id]}")  # Вывод текущего класса в консоль
 
         key = cv2.waitKey(0)
 
@@ -195,6 +198,14 @@ def browse_images(image_folder, label_folder):
         elif key == ord('q'):
             # Выход из программы
             break
+        elif key == ord('w'):
+            # Переключение на следующий класс
+            current_class_id = (current_class_id + 1) % len(class_names)
+            print(f"Switched to class: {class_names[current_class_id]}")
+        elif key == ord('s'):
+            # Переключение на предыдущий класс
+            current_class_id = (current_class_id - 1) % len(class_names)
+            print(f"Switched to class: {class_names[current_class_id]}")
 
     cv2.destroyAllWindows()
 

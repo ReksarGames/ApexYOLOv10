@@ -10,7 +10,7 @@ def arg_init(args):
     args.add_argument("--model_dir", type=str,
                     default=dirpath + "/model", help="model dir")
     args.add_argument("--model", type=str,
-                    default="/best.pt", help="model path")
+                    default="/best_8n.pt", help="model path")
     args.add_argument("--end2end", type=bool,
                     default=False, help="use TensorRT efficientNMSPlugin")
     args.add_argument("--classes", type=int,
@@ -39,15 +39,15 @@ def arg_init(args):
     args.add_argument("--aim_fov", type=float,
                     default=4/3, help="aim field of view, radius=width*aim_fov")
     args.add_argument("--caps_lock", type=bool,
-                    default=False, help="use CAPS_LOCK as LEFT_LOCK")
+                    default=True, help="use CAPS_LOCK as LEFT_LOCK")
     # args.add_argument("--mouse_speed", type=float,
     #                 default=3.50, help="mouse speed (mouse sensitivity in the game)")
 
     # PID args
     args.add_argument("--pid", type=bool, default=True, help="use proportional–integral–derivative control")
-    args.add_argument("--Kp", type=float, default=0.35, help="Kp")  # proporcional to distance 0.4 nimble 0.1 slack
+    args.add_argument("--Kp", type=float, default=0.1, help="Kp")  # proporcional to distance 0.4 nimble 0.1 slack
     args.add_argument("--Ki", type=float, default=0.02, help="Ki")  # integral accumulator 0.04 explosive 0.01 composed
-    args.add_argument("--Kd", type=float, default=0.35, help="Kd")  # derivative absorber 0.4 stiff 0.1 soft
+    args.add_argument("--Kd", type=float, default=0.2, help="Kd")  # derivative absorber 0.4 stiff 0.1 soft
 
     args = args.parse_args(args=[])
     return args
