@@ -141,6 +141,4 @@ tensorboard --logdir=runs/yolo_training10/ApexEsp80
 - **runs/** — Folder for saving logs, metrics, and training results.
 - **scripts/** — Folder containing the main project scripts.
 
-## Contact Information
 
-If you have any questions or issues, contact us via email: kirillnosenko304@gmail.com.
