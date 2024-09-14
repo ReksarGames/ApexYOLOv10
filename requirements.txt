@@ -1,11 +1,9 @@
-torch
-opencv-python
-numpy
-PyYAML~=6.0.2
+# Ultralytics requirements
+# Usage: pip install -r requirements.txt
+#numpy==1.23.1
+#torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu121
+pycuda
 ultralytics
-matplotlib
-pillow~=10.4.0
-keyboard
 pynput
-
 pywin32
+comtypes
