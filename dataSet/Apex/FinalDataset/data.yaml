@@ -4,4 +4,8 @@ test: 'D://Projects//Python//DotaDetection//dataSet//Apex//FinalDataset//test//i
 
 nc: 3
 
-names: ['apex-game', 'avatar', 'object']  # Имена классов
+#names: ['apex-game', 'avatar', 'object']  # Имена классов
+names:
+  0: ally
+  1: enemy
+  2: tag

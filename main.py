@@ -60,7 +60,7 @@ if __name__ == "__main__":
         time.sleep(args.wait)
         if args.model[-3:] == ".pt":
             predict_output = predict(args, img)
-            # print(predict_output.boxes.conf, predict_output.boxes.cls)
+            # print(predict_output.boxes.cls)
             boxes = predict_output.boxes
             boxes = boxes[boxes[:].cls == args.target_index].cpu().xyxy.numpy()
         time_predict = time.time()

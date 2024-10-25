@@ -7,21 +7,12 @@
     <list default="true" id="a85d6a04-8371-4e40-a414-707922c8ca85" name="Changes" comment="Update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/ApexYolov10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApexYolov10.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApexBot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/FixLabels.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/FixLabels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/splitDatasetFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/splitDatasetFiles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/test/testAlgWindMouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test/testAlgWindMouse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/test/testCUDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test/testCUDA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/test/testTorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test/testTorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/test/testWindMouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test/testWindMouse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/test/test_grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test/test_grabber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/args_.py" beforeDir="false" afterPath="$PROJECT_DIR$/args_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSet/Apex/FinalDataset/data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dataSet/Apex/FinalDataset/data.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labelConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/labelConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/semiauto_dataset_collector.py" beforeDir="false" afterPath="$PROJECT_DIR$/semiauto_dataset_collector.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,59 +46,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Albumentations.executor": "Run",
-    "Python.ApexBot.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.semiauto_dataset_collector.executor": "Run",
-    "Python.splitDatasetFiles.executor": "Run",
-    "Python.testWindMouse.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/legio/PycharmProjects/ApexYOLOv10",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Albumentations.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ApexBot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.labelConfig.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.semiauto_dataset_collector.executor&quot;: &quot;Run&quot;,
+    &quot;Python.splitDatasetFiles.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testWindMouse.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/legio/PycharmProjects/ApexYOLOv10/model&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\legio\PycharmProjects\ApexYOLOv10\model" />
       <recent name="C:\Users\legio\PycharmProjects\ApexYOLOv10" />
       <recent name="C:\Users\legio\PycharmProjects\ApexYOLOv10\utils" />
       <recent name="C:\Users\legio\PycharmProjects\ApexYOLOv10\docs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\legio\PycharmProjects\ApexYOLOv10\model" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ApexBot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ApexYolov10" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ApexBot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="ApexYolov10" />
       <option name="ENV_FILES" value="" />
@@ -131,9 +104,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="semiauto_dataset_collector" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ApexYolov10" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/semiauto_dataset_collector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ApexBot" />
+        <item itemvalue="Python.semiauto_dataset_collector" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +159,33 @@
       <workItem from="1726170493710" duration="2150000" />
       <workItem from="1726300121274" duration="5028000" />
       <workItem from="1726306634357" duration="2098000" />
+      <workItem from="1726320487709" duration="12741000" />
+      <workItem from="1726392044381" duration="3828000" />
+      <workItem from="1726404744562" duration="1590000" />
+      <workItem from="1726419272056" duration="611000" />
+      <workItem from="1726482157131" duration="2835000" />
+      <workItem from="1726509568270" duration="1179000" />
+      <workItem from="1726774740966" duration="7999000" />
+      <workItem from="1726941944560" duration="362000" />
+      <workItem from="1727002967671" duration="267000" />
+      <workItem from="1727005744183" duration="414000" />
+      <workItem from="1727006210510" duration="605000" />
+      <workItem from="1727007355413" duration="2000" />
+      <workItem from="1727169465832" duration="59000" />
+      <workItem from="1727176970971" duration="180000" />
+      <workItem from="1727184411277" duration="25000" />
+      <workItem from="1727184821108" duration="133000" />
+      <workItem from="1727192163401" duration="1659000" />
+      <workItem from="1727206127754" duration="2303000" />
+      <workItem from="1727290499620" duration="523000" />
+      <workItem from="1729339362906" duration="7060000" />
+      <workItem from="1729352988208" duration="719000" />
+      <workItem from="1729356952358" duration="1000" />
+      <workItem from="1729358943594" duration="27000" />
+      <workItem from="1729373268174" duration="13000" />
+      <workItem from="1729430655232" duration="1799000" />
+      <workItem from="1729612123888" duration="150000" />
+      <workItem from="1729613596124" duration="466000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Files">
       <option name="closed" value="true" />
@@ -212,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725645670601</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update README.md">
+      <option name="closed" value="true" />
+      <created>1726330954315</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726330954315</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,8 +259,10 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ApexYOLOv10$ApexBot.coverage" NAME="ApexBot Coverage Results" MODIFIED="1726308821142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ApexYOLOv10$Albumentations.coverage" NAME="Albumentations Coverage Results" MODIFIED="1725454825455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ApexYOLOv10$main.coverage" NAME="main Coverage Results" MODIFIED="1729613604120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ApexYOLOv10$testWindMouse.coverage" NAME="testWindMouse Coverage Results" MODIFIED="1725661054282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils/test" />
+    <SUITE FILE_PATH="coverage/ApexYOLOv10$labelConfig.coverage" NAME="labelConfig Coverage Results" MODIFIED="1726339186400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ApexYOLOv10$splitDatasetFiles.coverage" NAME="splitDatasetFiles Coverage Results" MODIFIED="1725454694696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/ApexYOLOv10$semiauto_dataset_collector.coverage" NAME="semiauto_dataset_collector Coverage Results" MODIFIED="1726141179972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ApexYOLOv10$semiauto_dataset_collector.coverage" NAME="semiauto_dataset_collector Coverage Results" MODIFIED="1727184906224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -56,7 +56,21 @@ def draw_labels_on_image(image_path, label_path):
         cv2.circle(image, (x_center, y_center), 5, (0, 0, 255), -1)  # Красная точка
         cv2.rectangle(image, (x1, y1), (x2, y2), (255, 0, 0), 2)  # Синий прямоугольник
 
+        # Подписываем объект с его классом
+        class_name = class_names.get(int(class_id), "unknown")  # Получаем имя класса
+        cv2.putText(image, class_name, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2)
+
+    # Добавляем вывод текста текущего класса на изображение
+    display_current_class(image)
+
     return image, current_labels
+
+def display_current_class(image):
+    """Функция для вывода названия текущего класса на изображение"""
+    global current_class_id, class_names
+    text = f"Current class: {class_names[current_class_id]}"
+    font = cv2.FONT_HERSHEY_SIMPLEX
+    cv2.putText(image, text, (10, 30), font, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
 def click_and_crop(event, x, y, flags, param):
     global ref_point, cropping, image_copy
@@ -202,15 +216,19 @@ def browse_images(image_folder, label_folder):
             # Переключение на следующий класс
             current_class_id = (current_class_id + 1) % len(class_names)
             print(f"Switched to class: {class_names[current_class_id]}")
+            display_current_class(image_copy)
+            cv2.imshow('Image with Labels', image_copy)
         elif key == ord('s'):
             # Переключение на предыдущий класс
             current_class_id = (current_class_id - 1) % len(class_names)
             print(f"Switched to class: {class_names[current_class_id]}")
+            display_current_class(image_copy)
+            cv2.imshow('Image with Labels', image_copy)
 
     cv2.destroyAllWindows()
 
 # Пример использования
-image_folder = 'image_folder'  # Путь к папке с изображениями
-label_folder = 'label_folder'  # Путь к папке с метками
+image_folder = 'dataSet/Apex/ManualOutput/images'  # Путь к папке с изображениями
+label_folder = 'dataSet/Apex/ManualOutput/labels'  # Путь к папке с метками
 
 browse_images(image_folder, label_folder)
